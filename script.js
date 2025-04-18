@@ -1,4 +1,4 @@
-fetch('airbnb_filtered.csv')
+fetch('public/airbnb_filtered.csv')
   .then(res => res.text())
   .then(csv => {
     const [headerLine, ...lines] = csv.trim().split('\n');
